@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core'
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalculadoraComponent } from './componentes/';
+import {CalculadoraService} from './services'
 
 
 
@@ -10,7 +11,10 @@ import { CalculadoraComponent } from './componentes/';
   imports: [
     CommonModule,
   ],
-  exports:[CalculadoraComponent]
+  exports:[CalculadoraComponent],
+  providers: [
+    CalculadoraService
+  ],
 })
 export class CalculadoraModule  {
 
